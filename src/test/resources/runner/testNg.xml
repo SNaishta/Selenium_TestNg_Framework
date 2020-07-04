@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Functional Suite" thread-count="2" parallel="tests">
+
+    <!--Please comment out relevant browser if expectation is to test only on one browser -->
+
+    <test name="Chrome">
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="runner.CheckOutFunctionalTest"/>
+        </classes>
+    </test>
+
+    <test name="firefox - end to end functional test cases">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="runner.CheckOutFunctionalTest"/>
+        </classes>
+    </test>
+</suite>
