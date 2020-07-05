@@ -1,4 +1,5 @@
-**# Sauce Demo-Webapp**
+Sauce Demo Webapp Automation Framework
+------------------------------------------------------------------------------------------------------------------
 Sauce Demo Selenium Automation Framework
 
 SETUP
@@ -12,6 +13,7 @@ Please follow the below steps as a pre-requisite for running the automation scri
 - Create git account to access the automation repository
 
 Set the path in your bash profile
+
 ******************* Sample ******************* 
 
 Bash Profile
@@ -45,21 +47,20 @@ Framework Features
 Also, ** Please note: I have not included any configurations for docker or selenium Grid as this framework is only designed to run locally on individual machines.
 
 Running the scripts via command line:
+--------------------------------------------------------------------------------------------------------------------
 Local: mvn clean verify -P SauceDemo -Dtags=@EndToEnd
 
 Reports are generated within target folder
 /target/cucumber-reports/cucumber-html-reports/overview-features.
 
-**localhost can vary for each system. This is a sample link**
-
-http://localhost:63343/saucedemoAssessment/target/cucumber-reports/cucumber-html-reports/overview-features.html
-http://localhost:63343/saucedemoAssessment/target/cucumber-reports/cucumber-html-reports/overview-tags.html
+Screenshot for the report can be found in the folder path 
+/Execution_Report_Screenshot
 
 Exception logs can be found in folder path
 project directory/logs/SauceDemo_automation.log.
 
 
-**Execution Flow**
+Execution Flow
 ---------------------------------------------------------------------------------------------------------------------------------
 Execution starts from POM file , reads the name from the profile and identifies the testNg xml file path from the tag
  <suiteXmlFile>src/test/resources/runner/testNg.xml</suiteXmlFile>
