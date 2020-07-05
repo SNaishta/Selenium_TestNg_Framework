@@ -40,7 +40,7 @@ Framework Features
 8. Logging libraries Log4j and cucumber reports in place.
 9. Have used dependency Injection to instantiate classes.
 10. SauceDemo website testing, there isn’t any data fetch /loading so have not included any sort of fluent waits. 
-11. Used io.github.bonigarcia maven dependency for internally configuring and managing of driver.exe rather having exe files on the framework.
+11. Used io.github.bonigarcia maven dependency for internally configuring and managing of driver.exe rather having exe files in the framework.
 
 Also, ** Please note: I have not included any configurations for docker or selenium Grid as this framework is only designed to run locally on individual machines.
 
@@ -49,6 +49,8 @@ Local: mvn clean verify -P SauceDemo -Dtags=@EndToEnd
 
 Reports are generated within target folder
 /target/cucumber-reports/cucumber-html-reports/overview-features.
+
+**localhost can vary for each system. This is a sample link**
 
 http://localhost:63343/saucedemoAssessment/target/cucumber-reports/cucumber-html-reports/overview-features.html
 http://localhost:63343/saucedemoAssessment/target/cucumber-reports/cucumber-html-reports/overview-tags.html
@@ -77,8 +79,8 @@ It is recommended that you add any general functionality / actions that are used
 Pages
 The framework is built using the Page Object Design Pattern, and the classes are split up in the following ways.
 
-Objects
+1. Objects
 Object classes (found in src/test/java/pages/objects) contain Java classes that encapsulate selectors for specific pages of the app. These form as bases for the action Java classes, which then make use of these selectors to define functions that the test framework will make use of.
 
-Actions
+2. Actions
 Action classes (found in src/test/java/pages/actions) contain Java classes that encapsulate functions and actions for specific pages of the app. These extend their Object Java class counterparts, so no selectors should be defined here.
