@@ -26,7 +26,7 @@ export MAVEN_OPTS=-Xms256m -Xmx512m
 export PATH=$M2:$PATH
 
 
-Clone or download the project from Github link ->
+Clone or download the project from Github link ->https://github.com/SNaishta/Selenium_TestNg_Framework
 
 Framework Features
 ------------------------------------------------------------------------------------------------------------------
