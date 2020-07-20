@@ -35,7 +35,7 @@ Framework Features
 1. System used for configuration and scripting - MAC OS.
 2. This is a TestNg framework, designed pattern is Page Object Model and written in Java. Command line execution with tags
 3. This framework uses Threadlocal property. Execution will progress in parallel on Chrome and Firefox if its installed on your system.
-4. Behaviour driver development style of test case, parameterised feature files.
+4. Behaviour driven development style of test case, parameterised feature files.
 5. All assertion in Step definition files.
 6. Project params saved on enums.
 7. Minimal test data , thereby used properties file rather than CSV.
