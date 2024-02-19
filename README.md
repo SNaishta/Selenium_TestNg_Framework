@@ -85,5 +85,3 @@ Object classes (found in src/test/java/pages/objects) contain Java classes that 
 
 2. Actions
 Action classes (found in src/test/java/pages/actions) contain Java classes that encapsulate functions and actions for specific pages of the app. These extend their Object Java class counterparts, so no selectors should be defined here.
-
-
